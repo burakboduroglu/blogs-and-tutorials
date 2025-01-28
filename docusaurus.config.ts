@@ -15,7 +15,7 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'tr'],
+    locales: ['en'],
   },
 
   presets: [
@@ -70,6 +70,10 @@ const config: Config = {
         {
           href: 'https://github.com/burakboduroglu/myTutorialsAndBlogs',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
