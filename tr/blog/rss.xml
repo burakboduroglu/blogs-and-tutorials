@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Welcome to tutorials and blogs Blog</title>
+        <link>https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog</link>
+        <description>Welcome to tutorials and blogs Blog</description>
+        <lastBuildDate>Sun, 12 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>tr</language>
+        <item>
+            <title><![CDATA[Spring Boot Cheat Sheet]]></title>
+            <link>https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet</link>
+            <guid>https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet</guid>
+            <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[🌱 Spring Annotations]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-spring-annotations">🌱 Spring Annotations<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#-spring-annotations" class="hash-link" aria-label="🌱 Spring Annotations doğrudan bağlantı" title="🌱 Spring Annotations doğrudan bağlantı">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="repository-">@Repository :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#repository-" class="hash-link" aria-label="@Repository : doğrudan bağlantı" title="@Repository : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Class Level Annotation</li>
+<li>It can reach the database and do all the operations.</li>
+<li>It make the connection between the database and the business logic.</li>
+<li>DAO is a repository.</li>
+<li>It is a marker interface.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@Repository</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class TestRepo{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public void add(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      System.out.println("Added");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="service-">@Service :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#service-" class="hash-link" aria-label="@Service : doğrudan bağlantı" title="@Service : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Class Level Annotation</li>
+<li>It is a marker interface.</li>
+<li>It is a business logic.</li>
+<li>It is a service layer.</li>
+<li>It used to create a service layer.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@Service</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class TestService{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public void service1(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      //business code (iş kodları)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autowired-">@Autowired :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#autowired-" class="hash-link" aria-label="@Autowired : doğrudan bağlantı" title="@Autowired : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Field Level Annotation</li>
+<li>It is used to inject the dependency.</li>
+<li>It is used to inject the object.</li>
+<li>It is used to inject the object reference.</li>
+<li>Dependency Injection is a design pattern.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public class Brand{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   private int id;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   private String name;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   @Autowired</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public Brand(int id, String name){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     this.id = id;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     this.name = name;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="controller-">@Controller :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#controller-" class="hash-link" aria-label="@Controller : doğrudan bağlantı" title="@Controller : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Class Level Annotation</li>
+<li>It is a marker interface.</li>
+<li>It is a controller layer.</li>
+<li>It is used to create a controller layer.</li>
+<li>It use with @RequestMapping annotation.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@Controller</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">@RequestMapping("/api/brands")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class BrandsController{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   @GetMapping("/getall")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public Employee getAll(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       return brandService.getAll();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="requestmapping-">@RequestMapping :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#requestmapping-" class="hash-link" aria-label="@RequestMapping : doğrudan bağlantı" title="@RequestMapping : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to map the HTTP request with specific method.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@Controller</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">@RequestMapping("/api/brands")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class BrandsController{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   @GetMapping("/getall")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public Employee getAll(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       return brandService.getAll();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getmapping-">@GetMapping :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#getmapping-" class="hash-link" aria-label="@GetMapping : doğrudan bağlantı" title="@GetMapping : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to map the HTTP GET request with specific method.</li>
+<li>It is used to get the data.</li>
+<li>It is used to read the data.<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@GetMapping("/getall")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public Employee getAll(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return brandService.getAll();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="postmapping-">@PostMapping :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#postmapping-" class="hash-link" aria-label="@PostMapping : doğrudan bağlantı" title="@PostMapping : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to map the HTTP POST request with specific method.</li>
+<li>It is used to add the data.</li>
+<li>It is used to create the data.<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@PostMapping("/add")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public void add(@RequestBody Brand brand){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    brandService.add(brand);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="putmapping-">@PutMapping :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#putmapping-" class="hash-link" aria-label="@PutMapping : doğrudan bağlantı" title="@PutMapping : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to map the HTTP PUT request with specific method.</li>
+<li>It is used to update the data.<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@PutMapping("/update")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public void update(@RequestBody Brand brand){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    brandService.update(brand);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deletemapping-">@DeleteMapping :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#deletemapping-" class="hash-link" aria-label="@DeleteMapping : doğrudan bağlantı" title="@DeleteMapping : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to map the HTTP DELETE request with specific method.</li>
+<li>It is used to delete the data.<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@DeleteMapping("/delete")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public void delete(@RequestBody Brand brand){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    brandService.delete(brand);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pathvariable-">@PathVariable :<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#pathvariable-" class="hash-link" aria-label="@PathVariable : doğrudan bağlantı" title="@PathVariable : doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Method Level Annotation</li>
+<li>It is used to get the data from the URL.</li>
+<li>It is the most suitable for RESTful web service that contains a path variable.<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@GetMapping("/getbyid/{id}")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public Brand getById(@PathVariable int id){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return brandService.getById(id);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="requestbody">@RequestBody:<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#requestbody" class="hash-link" aria-label="@RequestBody: doğrudan bağlantı" title="@RequestBody: doğrudan bağlantı">​</a></h3>
+<ul>
+<li>
+<p>It is used to get the data from the request body.</p>
+</li>
+<li>
+<p>It is used to get the data from the HTTP request.</p>
+</li>
+<li>
+<p>It is used to get the data from the HTTP request body.</p>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@PostMapping("/add")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public void add(@RequestBody Brand brand){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    brandService.add(brand);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="requestparam">@RequestParam:<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#requestparam" class="hash-link" aria-label="@RequestParam: doğrudan bağlantı" title="@RequestParam: doğrudan bağlantı">​</a></h3>
+<ul>
+<li>It is used to get the data from the URL.</li>
+<li>It is used to get the data from the URL query parameters.</li>
+<li>It is also known as query parameter.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@GetMapping("/getbyid")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public Brand getById(@RequestParam int id){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return brandService.getById(id);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="restcontroller">@RestController:<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#restcontroller" class="hash-link" aria-label="@RestController: doğrudan bağlantı" title="@RestController: doğrudan bağlantı">​</a></h3>
+<ul>
+<li>Class Level Annotation</li>
+<li>It is a marker interface.</li>
+<li>It is a controller layer.</li>
+<li>It is used to create a controller layer.</li>
+<li>It use with @RequestMapping annotation.</li>
+<li>It is a combination of @Controller and @ResponseBody annotations.</li>
+<li>@RestController annotation is explained with @ResponseBody annotation.</li>
+<li>@ResponseBody eliminates the need to add a comment to every method.</li>
+</ul>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@RestController</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">@RequestMapping("/api/brands")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class BrandsController{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   @GetMapping("/getall")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   public Employee getAll(){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       return brandService.getAll();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<ul>
+<li>If you like this article, you can give me a like on. 😎
+Thanks for reading. 🙏</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-posts">Other posts<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#other-posts" class="hash-link" aria-label="Other posts doğrudan bağlantı" title="Other posts doğrudan bağlantı">​</a></h3>
+<ul>
+<li><a href="https://dev.to/burakboduroglu/hibernate-cheat-sheet-2dke" target="_blank" rel="noopener noreferrer">Hibernate Guide</a></li>
+<li><a href="https://dev.to/burakboduroglu/building-the-future-a-beginners-guide-to-software-development-2ih8" target="_blank" rel="noopener noreferrer">Beginner Guide</a></li>
+<li><a href="https://dev.to/burakboduroglu/mongodb-cheat-sheet-1a6a" target="_blank" rel="noopener noreferrer">MongoDB</a></li>
+<li><a href="https://dev.to/burakboduroglu/behind-the-scenes-exploring-powerful-backend-frameworks-1an1" target="_blank" rel="noopener noreferrer">Behind the Scenes: Exploring Powerful Backend Frameworks</a></li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accounts">Accounts<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/Spring-Boot-Cheat-Sheet#accounts" class="hash-link" aria-label="Accounts doğrudan bağlantı" title="Accounts doğrudan bağlantı">​</a></h3>
+<ul>
+<li><a href="https://bento.me/burakboduroglu" target="_blank" rel="noopener noreferrer">Visit my page✅</a></li>
+<li><a href="https://github.com/burakboduroglu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+</ul>]]></content:encoded>
+            <category>Spring Boot</category>
+            <category>Java</category>
+            <category>Backend</category>
+        </item>
+        <item>
+            <title><![CDATA[A-Z: MongoDB Cheat Sheet🌱]]></title>
+            <link>https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z: MongoDB Cheat Sheet🌱</link>
+            <guid>https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z: MongoDB Cheat Sheet🌱</guid>
+            <pubDate>Tue, 20 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Contents 📖]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contents-">Contents 📖<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#contents-" class="hash-link" aria-label="Contents 📖 doğrudan bağlantı" title="Contents 📖 doğrudan bağlantı">​</a></h2>
+<ul>
+<li><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#definitions">Definitions</a></li>
+<li><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#mongodb-shell-commands">MongoDB Shell Commands</a></li>
+<li><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#thank-you">Thank You</a></li>
+<li><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#references">References</a></li>
+<li><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#my-other-contents">My Other Contents</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="definitions-">Definitions 🌳<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#definitions-" class="hash-link" aria-label="Definitions 🌳 doğrudan bağlantı" title="Definitions 🌳 doğrudan bağlantı">​</a></h2>
+<ul>
+<li><code>What is MongoDB?</code></li>
+</ul>
+<blockquote>
+<p>MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.</p>
+</blockquote>
+<ul>
+<li><code>What is a Database?</code></li>
+</ul>
+<blockquote>
+<p>A database holds a set of collections. A database typically has a separate file system directory to hold its data. Each database gets its own set of files on the file system. Generally, you associate a database with one application.</p>
+</blockquote>
+<ul>
+<li><code>What is a Collection?</code></li>
+</ul>
+<blockquote>
+<p>A collection is a group of documents. If a document is the MongoDB analog of a row in a relational database table, then a collection is the analog of a table.</p>
+</blockquote>
+<ul>
+<li><code>What is a Document?</code></li>
+</ul>
+<blockquote>
+<p>A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays, and arrays of documents.</p>
+</blockquote>
+<ul>
+<li><code>What is a Field?</code></li>
+</ul>
+<blockquote>
+<p>A document has a dynamic schema. Dynamic schemas allow documents in the same collection to have different sets of fields and to have different field names for the common fields.</p>
+</blockquote>
+<ul>
+<li><code>What is a Primary Key?</code></li>
+</ul>
+<blockquote>
+<p>In MongoDB, each document stored in a collection requires a unique _id field that acts as a primary key. If an inserted document omits the _id field, the MongoDB driver automatically generates an ObjectId for the _id field.</p>
+</blockquote>
+<ul>
+<li><code>Why use NoSQL?</code></li>
+</ul>
+<blockquote>
+<p>NoSQL databases are built to allow the insertion of data without a predefined schema. This makes NoSQL databases ideal for storing and processing unstructured data.</p>
+</blockquote>
+<ul>
+<li><code>Why use MongoDB?</code></li>
+</ul>
+<blockquote>
+<p>MongoDB is a document database, which means it stores data in JSON-like documents. We believe this is the most natural way to think about data, and is much more expressive and powerful than the traditional row/column model.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb-shell-commands-">MongoDB Shell Commands 🍃🌲<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#mongodb-shell-commands-" class="hash-link" aria-label="MongoDB Shell Commands 🍃🌲 doğrudan bağlantı" title="MongoDB Shell Commands 🍃🌲 doğrudan bağlantı">​</a></h2>
+<ul>
+<li><code>Show Database</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">show dbs</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will show all the databases in your MongoDB server.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Use Database</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">use &lt;database_name&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will switch to the database you want to use.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Show Collections</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">show collections</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will show all the collections in the database you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Drop Database</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.dropDatabase()</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will drop the database you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Create Collection</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.createCollection("&lt;collection_name&gt;")</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will create a collection in the database you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Insert a Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.insertOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will insert a document in the collection you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Insert Multiple Documents</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.insertMany([</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">])</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will insert multiple documents in the collection you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Find Documents</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find()</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Find Documents with Query</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that match the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Count Documents</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }).count()</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will count all the documents in the collection you are using that match the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Limit Documents</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find().limit(&lt;number&gt;)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will limit the number of documents returned by the find command.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>forEach()</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find().forEach(function(doc) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    print("Key: " + doc.&lt;key&gt; + " Value: " + doc.&lt;value&gt;);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will iterate through all the documents in the collection you are using and print the key and value of each document.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Find One Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.findOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find the first document in the collection you are using that matches the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Update a Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.updateOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}, {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $set: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will update the first document in the collection you are using that matches the query. $set is used to update the document.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Increment a Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.updateOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}, {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $inc: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will increment the value of the key in the first document in the collection you are using that matches the query. $inc is used to increment the value of the key.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Delete a Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.deleteOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will delete the first document in the collection you are using that matches the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Add new field to a Document</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.updateOne({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}, {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $set: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;new_key&gt;: &lt;new_value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will add a new field to the first document in the collection you are using that matches the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Greater than</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        $gt: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that have a key greater than the value.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Greater than or equal to</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        $gte: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that have a key greater than or equal to the value.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Less than</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        $lt: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that have a key less than the value.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Less than or equal to</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        $lte: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that have a key less than or equal to the value.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Not equal to</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        $ne: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that have a key not equal to the value.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>And</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $and: [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that match the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Or</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $or: [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will find all the documents in the collection you are using that match the query.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Sort</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find().sort({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: &lt;value&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will sort all the documents in the collection you are using by the key.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Sort Descending</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.find().sort({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;key&gt;: -1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will sort all the documents in the collection you are using by the key in descending order.</p>
+</blockquote>
+<hr>
+<ul>
+<li><code>Drop Collection</code></li>
+</ul>
+<div class="language-nosql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-nosql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">db.&lt;collection_name&gt;.drop()</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Kodu panoya kopyala" title="Kopyala" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p>This command will drop the collection you are using.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="thank-you-">Thank You 🌿<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#thank-you-" class="hash-link" aria-label="Thank You 🌿 doğrudan bağlantı" title="Thank You 🌿 doğrudan bağlantı">​</a></h2>
+<blockquote>
+<p>Thank you for taking the time to read my blog post! I hope you found it helpful and informative. Your support and engagement mean a lot to me. If you have any questions or feedback, please don’t hesitate to reach out. I appreciate your continued interest and look forward to sharing more valuable content in the future. Thank you once again!</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#references" class="hash-link" aria-label="References doğrudan bağlantı" title="References doğrudan bağlantı">​</a></h2>
+<ul>
+<li><a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a></li>
+<li><a href="https://academy.patika.dev/" target="_blank" rel="noopener noreferrer">Patika Academy</a></li>
+<li><a href="https://openai.com/blog/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+<li><a href="https://www.youtube.com/watch?v=-56x56UppqQ" target="_blank" rel="noopener noreferrer">Traversy Media</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="my-other-contents">My other contents<a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#my-other-contents" class="hash-link" aria-label="My other contents doğrudan bağlantı" title="My other contents doğrudan bağlantı">​</a></h2>
+<ul>
+<li>
+<p><a href="https://dev.to/burakboduroglu/boost-your-programming-efficiency-essential-tools-for-success-5h00" target="_blank" rel="noopener noreferrer">Boost Your Programming Efficiency: Essential Tools for Success ⚙️</a></p>
+</li>
+<li>
+<p><a href="https://dev.to/burakboduroglu/building-a-nodejs-server-without-using-expressjs-3mc8" target="_blank" rel="noopener noreferrer">Building a Node.js Server Without Using Express.js🐤</a></p>
+</li>
+<li>
+<p><a href="https://dev.to/burakboduroglu/a-z-git-cheat-sheet-14pm" target="_blank" rel="noopener noreferrer">A-Z: Git Cheat Sheet🔥</a></p>
+</li>
+<li>
+<p><a href="https://dev.to/burakboduroglu/js-guide-map-reduce-filter-and-foreach-methods-5fmi" target="_blank" rel="noopener noreferrer">JS Guide: Map, Reduce, Filter and forEach Methods</a></p>
+</li>
+<li>
+<p><a href="https://dev.to/burakboduroglu/understanding-cors-and-same-origin-policy-in-web-security-54hm" target="_blank" rel="noopener noreferrer">Understanding CORS and Same Origin Policy in Web Security🚨</a></p>
+</li>
+</ul>
+<hr>
+<p><a href="https://burakboduroglu.github.io/blogs-and-tutorials/tr/blog/A-Z:%20MongoDB%20Cheat%20Sheet%F0%9F%8C%B1#contents">Back to Top</a></p>]]></content:encoded>
+            <category>MongoDB</category>
+            <category>Database</category>
+            <category>Backend</category>
+        </item>
+    </channel>
+</rss>
