@@ -7,9 +7,10 @@ const config: Config = {
   tagline: 'Tech Made Simple, Knowledge Made Powerful.',
   favicon: 'img/favicon.ico',
   url: 'https://burakboduroglu.github.io/',
-  baseUrl: '/',
+  baseUrl: '/blogs-and-tutorials/',
   organizationName: 'burakboduroglu',
   projectName: 'blogs-and-tutorials',
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
